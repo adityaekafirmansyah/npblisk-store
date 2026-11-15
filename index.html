@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NP.BLISK - Koleksi Hobo Bag Elegan</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigasi / Header Toko -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-area">
+                <span class="brand-name">NP.BLISK</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#products">Koleksi Tas</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#contact" class="btn-cart">Pesan Sekarang</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Bagian Hero / Banner Utama -->
+    <header id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <span class="badge">Eksklusif & Tren Terbaru</span>
+                <h1>Sempurnakan Gaya Eleganmu Bersama NP.BLISK</h1>
+                <p>Temukan koleksi *hobo bag* premium berdesain modern, lembut, dan siap menemani setiap langkah aktivitas harianmu dengan penuh percaya diri.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Lihat Koleksi Tas</a>
+                    <a href="#contact" class="btn btn-outline">Hubungi Admin</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bagian Katalog Produk (Hobo Bag) -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Koleksi Hobo Bag Pilihan</h2>
+                <p>Dirancang dengan ketelitian tinggi untuk kenyamanan dan estetika gaya Anda.</p>
+            </div>
+
+            <div class="product-grid">
+                <!-- Produk 1 -->
+                <div class="product-card">
+                    <div class="product-img-placeholder">
+                        <span>Preview Hobo Bag 1</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Blisk Classic Soft Hobo</h3>
+                        <p class="price">Rp 285.000</p>
+                        <p class="desc">Tas bahu elegan berbahan lembut dengan kapasitas luas, ideal untuk acara kasual maupun formal.</p>
+                        <button class="btn-buy" onclick="orderProduct('Blisk Classic Soft Hobo')">Beli via WhatsApp</button>
+                    </div>
+                </div>
+
+                <!-- Produk 2 -->
+                <div class="product-card">
+                    <div class="product-img-placeholder">
+                        <span>Preview Hobo Bag 2</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Blisk Elegance Satin Series</h3>
+                        <p class="price">Rp 320.000</p>
+                        <p class="desc">Hobo bag dengan aksen mewah bertekstur halus, memberikan kesan anggun pada penampilan Anda.</p>
+                        <button class="btn-buy" onclick="orderProduct('Blisk Elegance Satin Series')">Beli via WhatsApp</button>
+                    </div>
+                </div>
+
+                <!-- Produk 3 -->
+                <div class="product-card">
+                    <div class="product-img-placeholder">
+                        <span>Preview Hobo Bag 3</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Blisk Minimalist Daily Bag</h3>
+                        <p class="price">Rp 250.000</p>
+                        <p class="desc">Model minimalis modern yang ringan, cocok untuk menemani rutinitas harian Anda dengan praktis.</p>
+                        <button class="btn-buy" onclick="orderProduct('Blisk Minimalist Daily Bag')">Beli via WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Tentang / Nilai Toko -->
+    <section id="about" class="about-section">
+        <div class="container about-container">
+            <h2>Mengapa Memilih NP.BLISK?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>✨ Desain Eksklusif</h3>
+                    <p>Model hobo bag dirancang khusus mengikuti tren mode masa kini yang anggun dan fungsional.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🧵 Kualitas Premium</h3>
+                    <p>Mengutamakan kerapian jahitan dan material pilihan terbaik untuk kenyamanan maksimal.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>💬 Pelayanan Ramah</h3>
+                    <p>Respon cepat dan siap membantu konsultasi pilihan model tas yang pas untuk Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Kontak / Pemesanan -->
+    <section id="contact" class="contact-section">
+        <div class="container contact-content">
+            <h2>Siap Memesan Hobo Bag Impianmu?</h2>
+            <p>Dapatkan koleksi terbaru dari NP.BLISK sekarang juga. Hubungi kami langsung melalui tombol di bawah ini.</p>
+            <a href="https://wa.me/6281234567890?text=Halo%20NP.BLISK,%20saya%20tertarik%20dengan%20koleksi%20hobo%20bag%20Anda." target="_blank" class="btn btn-whatsapp">Chat WhatsApp Admin</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 NP.BLISK. All Rights Reserved. Elegance in Every Carry.</p>
+        </div>
+    </footer>
+
+    <!-- Script Sederhana untuk Interaksi Tombol Beli -->
+    <script>
+        function orderProduct(productName) {
+            alert("Anda akan diarahkan untuk memesan produk: " + productName + ".\nSilakan hubungi admin via WhatsApp untuk konfirmasi pesanan!");
+        }
+    </script>
+
+</body>
+</html>
