@@ -1,0 +1,313 @@
+/* Pengaturan Dasar & Tema Warna Logo (Soft Pink Aesthetic) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff9fa;
+    color: #4a4043;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(220, 160, 170, 0.1);
+    z-index: 100;
+    padding: 15px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-name {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #d47a8a; /* Mengambil nuansa warna logo */
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #6a5c60;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #d47a8a;
+}
+
+.btn-cart {
+    background-color: #d47a8a;
+    color: white !important;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: background-color 0.2s;
+}
+
+.btn-cart:hover {
+    background-color: #bd6575;
+}
+
+/* Hero Section */
+.hero {
+    padding: 160px 0 100px 0;
+    background: linear-gradient(135deg, #ffeef1 0%, #fff9fa 100%);
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #f7d1d8;
+    color: #a34858;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+    color: #3b3033;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.hero p {
+    color: #6a5c60;
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Tombol Umum */
+.btn {
+    display: inline-block;
+    padding: 12px 26px;
+    border-radius: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #d47a8a;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #bd6575;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #d47a8a;
+    border: 1px solid #d47a8a;
+}
+
+.btn-outline:hover {
+    background-color: #ffeef1;
+}
+
+/* Produk Section */
+.products-section {
+    padding: 90px 0;
+    background-color: #ffffff;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    color: #3b3033;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    color: #8c7b80;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: #fff9fa;
+    border: 1px solid #f2e3e6;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(212, 122, 138, 0.1);
+}
+
+.product-img-placeholder {
+    height: 220px;
+    background-color: #f7d1d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a34858;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 1.2rem;
+    color: #3b3033;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #d47a8a;
+    margin-bottom: 10px;
+}
+
+.product-info .desc {
+    font-size: 0.9rem;
+    color: #736267;
+    margin-bottom: 20px;
+}
+
+.btn-buy {
+    width: 100%;
+    padding: 10px;
+    background-color: #3b3033;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-buy:hover {
+    background-color: #d47a8a;
+}
+
+/* Tentang Toko */
+.about-section {
+    padding: 80px 0;
+    background-color: #fff4f6;
+}
+
+.about-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #3b3033;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.feature-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(212, 122, 138, 0.05);
+}
+
+.feature-item h3 {
+    color: #d47a8a;
+    margin-bottom: 12px;
+}
+
+.feature-item p {
+    font-size: 0.9rem;
+    color: #736267;
+}
+
+/* Kontak Section */
+.contact-section {
+    padding: 90px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #fff9fa 0%, #ffeef1 100%);
+}
+
+.contact-content h2 {
+    font-size: 2.2rem;
+    color: #3b3033;
+    margin-bottom: 15px;
+}
+
+.contact-content p {
+    color: #736267;
+    max-width: 550px;
+    margin: 0 auto 30px auto;
+}
+
+.btn-whatsapp {
+    background-color: #25d366;
+    color: white;
+    font-size: 1.05rem;
+    padding: 14px 30px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe57;
+}
+
+/* Footer */
+footer {
+    padding: 25px 0;
+    background-color: #3b3033;
+    color: #d8cace;
+    text-align: center;
+    font-size: 0.85rem;
+}
